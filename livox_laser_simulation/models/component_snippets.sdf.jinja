@@ -1828,7 +1828,7 @@ limitations under the License.
 
   {%- set spawner_keyword = 'enable-livox' -%}
   {%- set spawner_description = 'Add Livox Mid-360 laser scanner to the vehicle' -%}
-  {%- set spawner_default_args = {'horizontal_samples': 100, 'vertical_samples': 50, 'noise': 0.0, 'range': 40, 'update_rate': 10, 'samples': 5000, 'downsample': 1, 'csv_file_name': 'mid360-real-centr.csv', 'publish_pointcloud_type': 2, 'mass': 0.1} -%}
+  {%- set spawner_default_args = {'horizontal_samples': 100, 'vertical_samples': 50, 'noise': 0.0, 'range': 20, 'update_rate': 10, 'samples': 5000, 'downsample': 1, 'csv_file_name': 'mid360-real-centr.csv', 'publish_pointcloud_type': 2, 'mass': 0.1} -%}
 
   {%- if spawner_keyword in spawner_args.keys() -%}
     {{ generic.handle_spawner_args(spawner_keyword, spawner_default_args, spawner_args) }}
