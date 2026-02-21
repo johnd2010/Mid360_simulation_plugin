@@ -1011,7 +1011,7 @@ limitations under the License.
 
   {%- set spawner_keyword = 'enable-livox' -%}
   {%- set spawner_description = 'Add Livox laser scanner to the vehicle.' -%}
-  {%- set spawner_default_args = {'horizontal_samples': 2048, 'update_rate': 10, 'noise': 0.03, 'range': 10.0} -%}
+  {%- set spawner_default_args = {'horizontal_samples': 2048, 'update_rate': 10, 'noise': 0.03, 'range': 20.0} -%}
 
   {%- if spawner_keyword in spawner_args.keys() -%}
     {{ generic.handle_spawner_args(spawner_keyword, spawner_default_args, spawner_args) }}
